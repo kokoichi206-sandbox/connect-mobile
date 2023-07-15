@@ -2,7 +2,7 @@
 //
 // Source: proto/say/v1/say.proto
 
-package greetv1connect
+package sayv1connect
 
 import (
 	context "context"
