@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package say.v1;
+
+option go_package = "example/gen/say/v1;greetv1";
+
+message SayRequest {
+  string sentence = 1;
+}
+
+message SayResponse {
+  string sentence = 1;
+}
+
+service ElizaService {
+  rpc Say(SayRequest) returns (SayResponse) {}
+}

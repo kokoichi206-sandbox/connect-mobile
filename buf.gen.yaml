@@ -1,0 +1,13 @@
+version: v1
+plugins:
+  - plugin: buf.build/bufbuild/connect-kotlin
+    out: gen/kotlin
+  - plugin: buf.build/protocolbuffers/java
+    out: gen/kotlin
+
+  - plugin: go
+    out: gen/go
+    opt: paths=source_relative
+  - plugin: connect-go
+    out: gen/go
+    opt: paths=source_relative
