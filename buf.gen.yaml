@@ -4,6 +4,10 @@ plugins:
     out: gen/kotlin
   - plugin: buf.build/protocolbuffers/java
     out: gen/kotlin
+  - plugin: buf.build/bufbuild/connect-kotlin
+    out: android/app/src/main/java
+  - plugin: buf.build/protocolbuffers/java
+    out: android/app/src/main/java
 
   - plugin: go
     out: gen/go

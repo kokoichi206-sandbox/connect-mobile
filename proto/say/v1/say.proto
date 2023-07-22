@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package say.v1;
 
+option java_package = "gen.say.v1";
 option go_package = "go-server/gen/proto/say/v1;sayv1";
 
 message SayRequest {

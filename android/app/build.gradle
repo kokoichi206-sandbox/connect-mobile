@@ -63,4 +63,10 @@ dependencies {
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
+
+    implementation "com.squareup.okhttp3:okhttp:4.10.0"
+    implementation "build.buf:connect-kotlin-okhttp:0.1.4"
+    // Java specific dependencies.
+    implementation "build.buf:connect-kotlin-google-java-ext:0.1.4"
+    implementation "com.google.protobuf:protobuf-java:3.22.0"
 }
